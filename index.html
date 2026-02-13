@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>我的第一个网页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            text-align: center;
+            min-height: 100vh;
+            padding-top: 100px;
+            font-family: "微软雅黑", sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        h1 {
+            font-size: 56px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        p {
+            font-size: 24px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        button {
+            font-size: 20px;
+            padding: 14px 32px;
+            border: none;
+            border-radius: 50px;
+            background-color: #fff;
+            color: #667eea;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3 ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+            background-color: #f0f0f0;
+        }
+        #myImage {
+            display: none;
+            width: 300px;
+            margin-top: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+    <h1>你好，HTML！</h1>
+    <p>这是一个简单的网页示例</p >
+    <button onclick="showImage()">点我显示图片</button>
+    < img id="myImage" src="https://picsum.photos/300/300" alt="示例图片">
+
+    <script>
+        function showImage() {
+            document.getElementById("myImage").style.display = "block";
+        }
+    </script>
+</body>
+</html>
