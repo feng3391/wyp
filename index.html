@@ -44,7 +44,6 @@
             box-shadow: 0 6px 20px rgba(0,0,0,0.3);
             background-color: #f0f0f0;
         }
-        /* 图片样式（默认隐藏） */
         #myImage {
             display: none;
             width: 300px;
@@ -58,14 +57,17 @@
     <h1>你好，HTML！</h1>
     <p>这是一个简单的网页示例</p >
     <button onclick="showImage()">点我显示图片</button>
-    <!-- 点击后显示的图片 -->
+
+    <!-- 👇 这行是图片标签，不是文本，要单独放 -->
     < img id="myImage" src="photo.jpg" alt="我的图片">
-    
+
     <script>
         function showImage() {
             document.getElementById("myImage").style.display = "block";
         }
     </script>
 </body>
+</html>
 
 </html>
+
